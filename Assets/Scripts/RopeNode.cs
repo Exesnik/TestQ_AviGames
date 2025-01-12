@@ -10,8 +10,8 @@ public class RopeNode : MonoBehaviour, IRopeNode
     [SerializeField] private Color hoverColor = Color.yellow;
     private Color originalColor;
     [SerializeField] private GameObject _hoverSprite;
-    private bool _isDragSoundPlaying = false; // Add this
-    private bool _isDraggable = true; // Add this
+    private bool _isDragSoundPlaying = false; 
+    private bool _isDraggable = true; 
     private void Awake()
     {
         startPosition = transform.position;
@@ -40,7 +40,7 @@ public class RopeNode : MonoBehaviour, IRopeNode
     {
         _isDragging = false;
         _audioManager.StopDragSound();
-        _isDragSoundPlaying = false; // Reset flag when dragging stops
+        _isDragSoundPlaying = false; 
     }
     public void ResetPosition()
     {
